@@ -1,7 +1,8 @@
 import 'package:currency_converter/currency_converter_material_app.dart';
 import 'package:flutter/material.dart';
-
-void main(){
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+Future<void> main() async {
+  await dotenv.load(fileName: ".env"); 
   runApp(const MyApp());
 }
 
@@ -9,7 +10,9 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(useMaterial3:true ),
       home: CurrencyConverterMaterialPage(),
     );
   }
