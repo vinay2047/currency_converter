@@ -16,12 +16,6 @@ target currencies, and instantly see the converted result.
 
 ------------------------------------------------------------------------
 
-## 📸 Screenshots
-
-(Add your app screenshots here once you run it)
-
-------------------------------------------------------------------------
-
 ## 🛠️ Technologies Used
 
 -   [Flutter](https://flutter.dev)\
